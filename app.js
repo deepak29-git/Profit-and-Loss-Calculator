@@ -4,6 +4,7 @@ const result = document.querySelector("#output");
 
 showBtn.addEventListener('click', calculateProfitAndLoss)
 
+
 function calculateProfitAndLoss() {
     var intialPrice = Number(inputField[0].value);
     var stockQuantity = Number(inputField[1].value);
