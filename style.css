@@ -12,7 +12,7 @@
 input{
     padding: 10px 10px;
     width: 25%;
-    border-color: blue;
+    border-color: #00BF8F;
     border-radius: 8px;
     outline: none;
     font-size: large;
@@ -24,11 +24,15 @@ button{
     padding: 10px 20px;
     margin: 20px 0;
     cursor: pointer;
-    border: 2px solid blue;
+    border: 1px solid black;
     border-radius: 8px;
     color: black;
     font-size: large;
     font-weight: 600;
+    background-color: #00BF8F;
+}
+button:hover{
+    background-color: #72dfc4;
 }
 #output{
     color: black;
