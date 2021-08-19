@@ -43,6 +43,5 @@ function calculateProfitAndLoss() {
     } else {
         (currentPrice === intialPrice)
         result.innerText = ("😐no pain no gain");
-        document.body.style.backgroundColor = "black";
     }
 }
