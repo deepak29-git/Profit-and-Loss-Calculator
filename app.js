@@ -18,6 +18,12 @@ function calculateProfitAndLoss() {
         result.innerText = "Please fill all the fields"
         return false;
     }
+    if (stockQuantity < 0) {
+        result.innerText = "Stock quantity should be greater than 0"
+        return false;
+    }
+
+
     if (currentPrice > intialPrice) {
         result.style.backgroundColor = 'green';
         result.style.padding = '20px';
