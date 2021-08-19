@@ -27,9 +27,6 @@ function calculateProfitAndLoss() {
     if (currentPrice > intialPrice) {
         result.style.backgroundColor = 'green';
         result.style.padding = '20px';
-        document.body.style.backgroundImage = "url('/happy.png')";
-        document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundPosition = "center";
         result.innerText = `😊Congrats! The Profit is ${profit} Rs. the Profit percentage is ${profitPercentage}%`;
 
 
@@ -37,11 +34,9 @@ function calculateProfitAndLoss() {
         result.innerText = `☹️Oh! The Loss is ${loss} Rs. the Loss percentage is ${lossPercentage}%`;
         result.style.backgroundColor = 'red';
         result.style.padding = '20px';
-        document.body.style.backgroundImage = "url('/sad.jpg')";
-        document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundPosition = "center";
-    } else {
+           } else {
         (currentPrice === intialPrice)
+        result.style.backgroundColor = "white";
         result.innerText = ("😐no pain no gain");
     }
 }
